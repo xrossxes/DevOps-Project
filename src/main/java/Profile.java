@@ -31,6 +31,6 @@ public class Profile {
 	}
 	
 	protected String lastname;
-	protected String gender;
+	protected String gender; 
 
 }

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class ProfileSuccessServlet
  */
 @WebServlet("/ProfileSuccessServlet")
-public class ProfileSuccessServlet extends HttpServlet {
+public class ProfileSuccessServlet extends HttpServlet { 
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -38,7 +38,8 @@ public class ProfileSuccessServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		//step1 - initialize a printwriter object to return the html values via the response
 		PrintWriter out = response.getWriter();
 		
@@ -68,7 +69,7 @@ public class ProfileSuccessServlet extends HttpServlet {
 			 if (i > 0){
 			PrintWriter writer = response.getWriter();
 			writer.println("<h1>" + "Successfully added profile details!" + 
-			"</h1>");
+			"</h1>");	
 			writer.close(); 
 			} 
 			}

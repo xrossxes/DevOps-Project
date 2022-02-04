@@ -32,7 +32,7 @@
 						<th>Last Name</th>
 						<th>Gender</th>
 						<th>Others</th>
-					</tr>
+					</tr> 
 				</thead>
 				<!-- Pass in the list of profile receive via the Servlet’s response to a loop
 -->
