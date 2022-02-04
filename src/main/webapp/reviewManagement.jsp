@@ -30,7 +30,7 @@
 						<th>Comment</th>
 						<th>Actions</th>
 					</tr>
-				</thead>
+				</thead> 
 				<!-- Pass in the list of note receive via the Servlet’s response to a loop
 -->
 				<tbody>
@@ -54,4 +54,4 @@ value='${review.title}' />">Delete</a></td>
 		</div>
 	</div>
 </body>
-</html>
+</html> 

@@ -25,5 +25,6 @@
 		<url-pattern>/ReviewServlet/update</url-pattern>
 		<url-pattern>/ReviewServlet/delete</url-pattern>
 	</servlet-mapping>
-	
+	 
 </web-app>
+ 
