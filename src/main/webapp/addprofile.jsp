@@ -15,7 +15,7 @@
 			<option>Female</option>
 			<option>Others</option>
 		</select> <input type="submit" value="Create Profile" />
-	</form>
+	</form> 
 </body>
 </html>
 

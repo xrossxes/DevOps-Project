@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class ProfileServlet
  */
 @WebServlet("/ProfileServlet")
-public class ProfileServlet extends HttpServlet {
+public class ProfileServlet extends HttpServlet { 
 	
 	//step1 - prepare list of variables used for database connections
 	private String jdbcURL = "jdbc:mysql://localhost:3306/profile_details";

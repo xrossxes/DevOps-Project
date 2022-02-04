@@ -15,7 +15,7 @@ pageEncoding="UTF-8"%>
 	crossorigin="anonymous">
 
 </head>
-<body>
+<body> 
 
 	<nav class="navbar navbar-expand-md navbar-light">
 		<div>

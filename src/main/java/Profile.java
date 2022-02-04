@@ -6,7 +6,7 @@ public class Profile {
 	public Profile(String firstname, String lastname, String gender) {
 		super();
 		this.firstname = firstname;
-		this.lastname = lastname;
+		this.lastname = lastname; 
 		this.gender = gender;
 	}
 	
