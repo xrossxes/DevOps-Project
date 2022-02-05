@@ -10,21 +10,98 @@
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>default.html</welcome-file>
 		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.jsp</welcome-file> 
 	</welcome-file-list>
 
 	<servlet>
 		<servlet-name>ReviewServlet</servlet-name>
-		<servlet-class>ReviewServlet</servlet-class>
+		<servlet-class>ReviewServlet</servlet-class> 
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>ReviewServlet</servlet-name>
 		<url-pattern>/ReviewServlet/dashboard</url-pattern>
-		<url-pattern>/ReviewServlet/edit</url-pattern>
+		<url-pattern>/ReviewServlet/edit</url-pattern> 
 		<url-pattern>/ReviewServlet/update</url-pattern>
 		<url-pattern>/ReviewServlet/delete</url-pattern>
 	</servlet-mapping>
-	 
-</web-app>
- 
+  
+  <servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet/dashboard</url-pattern>
+		<url-pattern>/UserServlet/edit</url-pattern>
+		<url-pattern>/UserServlet/update</url-pattern>
+		<url-pattern>/UserServlet/delete</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>ProfileServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/ProfileServlet/dashboard</url-pattern>
+		<url-pattern>/ProfileServlet/edit</url-pattern>
+		<url-pattern>/ProfileServlet/update</url-pattern>
+		<url-pattern>/ProfileServlet/delete</url-pattern>		
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MovieServlet</servlet-name>
+		<servlet-class>MovieServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MovieServlet</servlet-name>
+		<url-pattern>/MovieServlet/dashboard</url-pattern>
+		<url-pattern>/MovieServlet/edit</url-pattern>
+		<url-pattern>/MovieServlet/update</url-pattern>
+		<url-pattern>/MovieServlet/delete</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet/dashboard</url-pattern>
+		<url-pattern>/UserServlet/edit</url-pattern>
+		<url-pattern>/UserServlet/update</url-pattern>
+		<url-pattern>/UserServlet/delete</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>ProfileServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/ProfileServlet/dashboard</url-pattern>
+		<url-pattern>/ProfileServlet/edit</url-pattern>
+		<url-pattern>/ProfileServlet/update</url-pattern>
+		<url-pattern>/ProfileServlet/delete</url-pattern>		
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MovieServlet</servlet-name>
+		<servlet-class>MovieServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MovieServlet</servlet-name>
+		<url-pattern>/MovieServlet/dashboard</url-pattern>
+		<url-pattern>/MovieServlet/edit</url-pattern>
+		<url-pattern>/MovieServlet/update</url-pattern>
+		<url-pattern>/MovieServlet/delete</url-pattern>
+	</servlet-mapping>
+  </web-app>
+
