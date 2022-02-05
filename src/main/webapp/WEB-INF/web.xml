@@ -51,5 +51,18 @@
 		<url-pattern>/ProfileServlet/update</url-pattern>
 		<url-pattern>/ProfileServlet/delete</url-pattern>		
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MovieServlet</servlet-name>
+		<servlet-class>MovieServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MovieServlet</servlet-name>
+		<url-pattern>/MovieServlet/dashboard</url-pattern>
+		<url-pattern>/MovieServlet/edit</url-pattern>
+		<url-pattern>/MovieServlet/update</url-pattern>
+		<url-pattern>/MovieServlet/delete</url-pattern>
+	</servlet-mapping>
 
 </web-app>
