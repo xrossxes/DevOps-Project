@@ -19,5 +19,5 @@ public class Review {
 		this.comment = comment;
 	}
 	protected String comment;
-
+ 
 }

@@ -14,7 +14,7 @@
 <body>
 	<div class="row">
 		<div class="container">
-			<h3 class="text-center">List of Reviews</h3>
+			<h3 class="text-center">Reviews Section</h3>
 			<hr>
 			<div class="container text-left">
 				<!-- Add new user button redirects to the addnote.jsp page -->
@@ -30,7 +30,7 @@
 						<th>Comment</th>
 						<th>Actions</th>
 					</tr>
-				</thead>
+				</thead> 
 				<!-- Pass in the list of note receive via the Servlet’s response to a loop
 -->
 				<tbody>
@@ -54,4 +54,4 @@ value='${review.title}' />">Delete</a></td>
 		</div>
 	</div>
 </body>
-</html>
+</html> 
