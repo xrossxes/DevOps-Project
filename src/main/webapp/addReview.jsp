@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Insert Title Here</title>
 </head>
 <body>
 	<form action="AddReviewServlet" method="post">

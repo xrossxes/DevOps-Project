@@ -18,7 +18,7 @@
 
 	<nav class="navbar navbar-expand-md navbar-light">
 		<div>
-			<a class="navbar-brand"> Review Management Application </a>
+			<a class="navbar-brand"> Review Editing Application </a>
 		</div>
 		<ul class="navbar-nav">
 			<li><a
