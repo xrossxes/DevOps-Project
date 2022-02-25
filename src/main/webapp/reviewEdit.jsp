@@ -4,15 +4,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert review here</title>
+<title>Edit Review</title>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<title>Review Management Application</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	
+
 </head>
 <body>
 
@@ -62,12 +61,12 @@ value='${review.title}' />" class="form-control"
 value='${review.comment}' />" class="form-control"
 						name="comment">
 				</fieldset>
-				<button type="submit" class="btn btn-success">Save</button>
+				<button type="submit" class="btnbtn-success">Save</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 </body>
-</html> 
+</html>
