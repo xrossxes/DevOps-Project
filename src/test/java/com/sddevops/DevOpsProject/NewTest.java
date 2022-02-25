@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class NewTest {
+public class NewTest { 
   //declare Selenium WebDriver
   private WebDriver webDriver;		
   private String Name;
