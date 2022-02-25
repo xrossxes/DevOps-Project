@@ -1,3 +1,4 @@
+
 package com.sddevops.DevOpsProject;
 import java.util.Random;
 
@@ -15,7 +16,8 @@ import org.testng.annotations.AfterTest;
 public class NewTest { 
   //declare Selenium WebDriver
   private WebDriver webDriver1;		
-  private String Name; 
+  
+  private String Name;
    
   public String generateRandomName(int length) {
       char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -162,5 +164,5 @@ public class NewTest {
 	  //Quit the ChromeDriver and close all associated window at the end of test
 	  webDriver1.quit();			
   }
-
 }
+

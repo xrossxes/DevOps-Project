@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Review Management</title>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%><link
 	rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,12 +14,12 @@
 <body>
 	<div class="row">
 		<div class="container">
-			<h3 class="text-center">Reviews Section</h3>
+			<h3 class="text-center">Reviews Section asd</h3>
 			<hr>
 			<div class="container text-left">
 				<!-- Add new user button redirects to the addnote.jsp page -->
 				<a href="<%=request.getContextPath()%>/addReview.jsp"
-					class="btn btnsuccess">Add New Review</a>
+					class="btnbtnsuccess">Add New Review</a>
 			</div>
 			<br>
 			<!-- Create a table to list out all current note information -->
@@ -30,7 +30,7 @@
 						<th>Comment</th>
 						<th>Actions</th>
 					</tr>
-				</thead> 
+				</thead>
 				<!-- Pass in the list of note receive via the Servlet’s response to a loop
 -->
 				<tbody>
@@ -54,4 +54,4 @@ value='${review.title}' />">Delete</a></td>
 		</div>
 	</div>
 </body>
-</html> 
+</html>
