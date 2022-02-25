@@ -69,7 +69,7 @@ public class NewTest {
 	  
 	  // Input
 	  
-	  name.sendKeys("Micheal");
+	  name.sendKeys("Moho");
 	  
 	// Go to the 2nd input
 	  
@@ -85,7 +85,7 @@ public class NewTest {
 	  
 	  //input 
 	  
-	  email.sendKeys("MichealSingapore@gmail.com");
+	  email.sendKeys("Moho@gmail.com");
 	  
 	  // press the button with class name 'register'
 	  
@@ -93,7 +93,7 @@ public class NewTest {
 	  
 	  // press the button with class name 'afterregister'
 	  
-	  webDriver.findElement(By.className("afterregister")).click();
+	  webDriver.findElement(By.className("SuccessRegister")).click();
 	  
 	  // Go to the page with the title named 'User Management'
 	  
