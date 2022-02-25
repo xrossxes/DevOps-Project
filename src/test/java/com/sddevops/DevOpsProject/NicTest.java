@@ -18,7 +18,7 @@ public class NicTest {
 	@Test
 
 	// shows all details of the users on dashboard
-	public void checkTitle() {
+	public void checkTitle1() {
 		// Load website as a new page
 		webDriver.navigate().to("http://localhost:8080/DevOpsProject/ReviewServlet/dashboard");
 
@@ -38,7 +38,7 @@ public class NicTest {
 
 	@Test
 	// add profile page form
-	public void AddReview() {
+	public void AddReview1() {
 		webDriver.navigate().to("http://localhost:8080/DevOpsProject/addReview.jsp");
 
 		Assert.assertEquals(webDriver.getTitle(), "Add New Review");
@@ -62,7 +62,7 @@ public class NicTest {
 	}
 
 	@Test
-	public void Edit() {
+	public void Edit1() {
 		webDriver.navigate().to("http://localhost:8080/DevOpsProject/ReviewServlet/dashboard");
 
 		Assert.assertEquals(webDriver.getTitle(), "Review Management");
@@ -86,7 +86,7 @@ public class NicTest {
 	}
 
 	@Test
-	public void Delete() {
+	public void Delete1() {
 		webDriver.navigate().to("http://localhost:8080/DevOpsProject/ReviewServlet/dashboard");
 
 		Assert.assertEquals(webDriver.getTitle(), "Review Management");
@@ -96,7 +96,7 @@ public class NicTest {
 	}
 
 	@BeforeTest
-	public void beforeTest() {
+	public void beforeTest1() {
 		// Setting system properties of ChromeDriver
 		// to amend directory path base on your local file path
 		String chromeDriverDir = "C:\\Program Files\\Google\\Chrome\\chromedriver.exe";
@@ -108,7 +108,7 @@ public class NicTest {
 	}
 
 	@AfterTest
-	public void afterTest() {
+	public void afterTest1() {
 		// Quit the ChromeDriver and close all associated window at the end of test
 		webDriver.close();
 	}
