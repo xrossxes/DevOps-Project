@@ -51,8 +51,7 @@ public class NewTest {
   }
   @Test
   // Create a registration function to test it out
-  public void Registration() {
-	  
+  public void Registration() {	  
 	  // Go to this page 
 	  
 	  webDriver1.navigate().to("http://localhost:8090/DevOpsProject/register.jsp");
