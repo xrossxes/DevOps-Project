@@ -60,7 +60,7 @@ value='${profile.firstname}' />" />
 				<fieldset class="form-group">
 					<label>Gender</label> <input type="text" value="<c:out value='${profile.gender}' />" class="form-control" name="gender">
 					</fieldset>
-				<button type="submit" class="btn btn-success">Save</button>
+				<button type="submit" class="editbutton">Save</button>
 				</form>
 			</div>
 		</div>

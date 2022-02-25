@@ -90,7 +90,7 @@ public class NewTest_HX {
 	public void deleteProfile() {
 		webDriver.navigate().to("http://localhost:8091/DevOpsProject/ProfileServlet/dashboard");
 
-		Assert.assertEquals(webDriver.getTitle(), "Profile Management"); 
+		Assert.assertEquals(webDriver.getTitle(), "Profile Management");  
 
 		webDriver.findElement(By.xpath("/html/body/div")).click();
 
