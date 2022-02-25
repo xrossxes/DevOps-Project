@@ -14,7 +14,7 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest { 
   //declare Selenium WebDriver
-  private WebDriver webDriver;		
+  private WebDriver webDriver1;		
   private String Name;
    
   public String generateRandomName(int length) {
@@ -33,19 +33,19 @@ public class NewTest {
   @Test
   public void checkTitle() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
+	  webDriver1.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
 	  
 	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "User Management");
+	  Assert.assertEquals(webDriver1.getTitle(), "User Management");
 	  
-	  System.out.println("title: "+webDriver.getTitle());
+	  System.out.println("title: "+webDriver1.getTitle());
 	  
 	  //Retrieve link using it's class name and click on it
-	  webDriver.findElement(By.className("btnbtnsuccess")).click();
+	  webDriver1.findElement(By.className("btnbtnsuccess")).click();
 
 	  //Assert the new title to check that the title contain Wikipedia and the button had successfully bring us to the new page
-	  Assert.assertTrue(webDriver.getTitle().contains("User Registration"));
-	  System.out.println("new title: "+webDriver.getTitle());
+	  Assert.assertTrue(webDriver1.getTitle().contains("User Registration"));
+	  System.out.println("new title: "+webDriver1.getTitle());
 	  
 	   
   }
@@ -55,17 +55,17 @@ public class NewTest {
 	  
 	  // Go to this page 
 	  
-	  webDriver.navigate().to("http://localhost:8090/DevOpsProject/register.jsp");
+	  webDriver1.navigate().to("http://localhost:8090/DevOpsProject/register.jsp");
 	  
 	  // Go to this page with a title called 'User Registration'
 	  
-	  Assert.assertEquals(webDriver.getTitle(), "User Registration");
+	  Assert.assertEquals(webDriver1.getTitle(), "User Registration");
 	  
-	  System.out.println("title: "+webDriver.getTitle());
+	  System.out.println("title: "+webDriver1.getTitle());
 	  
 	  // Go to the 1st input
 	  
-	  WebElement name =  webDriver.findElement(By.xpath("/html/body/form/input[1]"));
+	  WebElement name =  webDriver1.findElement(By.xpath("/html/body/form/input[1]"));
 	  
 	  // Input
 	  
@@ -73,7 +73,7 @@ public class NewTest {
 	  
 	// Go to the 2nd input
 	  
-	  WebElement password =  webDriver.findElement(By.xpath("/html/body/form/input[2]"));
+	  WebElement password =  webDriver1.findElement(By.xpath("/html/body/form/input[2]"));
 	  
 	  // Input
 	  
@@ -81,7 +81,7 @@ public class NewTest {
 	  
 	// Go to the 3rd input
 	  
-	  WebElement email =  webDriver.findElement(By.xpath("/html/body/form/input[3]"));
+	  WebElement email =  webDriver1.findElement(By.xpath("/html/body/form/input[3]"));
 	  
 	  //input 
 	  
@@ -89,58 +89,58 @@ public class NewTest {
 	  
 	  // press the button with class name 'register'
 	  
-	  webDriver.findElement(By.className("register")).click();
+	  webDriver1.findElement(By.className("register")).click();
 	  
 	  // press the button with class name 'afterregister'
 	  
-	  webDriver.findElement(By.className("SuccessRegister")).click();
+	  webDriver1.findElement(By.className("SuccessRegister")).click();
 	  
 	  // Go to the page with the title named 'User Management'
 	  
-	  Assert.assertTrue(webDriver.getTitle().contains("User Management"));
-	  System.out.println("new title: "+webDriver.getTitle());
+	  Assert.assertTrue(webDriver1.getTitle().contains("User Management"));
+	  System.out.println("new title: "+webDriver1.getTitle());
 	  
   }
 	  @Test
 	  public void Edit() {
-		  webDriver.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
+		  webDriver1.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
 		 
 		  Name = generateRandomName(9);
 		  
-		  Assert.assertEquals(webDriver.getTitle(), "User Management");
+		  Assert.assertEquals(webDriver1.getTitle(), "User Management");
 		  
-		  System.out.println("title: "+webDriver.getTitle());
+		  System.out.println("title: "+webDriver1.getTitle());
 		  
-		  webDriver.findElement(By.xpath("/html/body/div/div/table/tbody/tr[1]/td[4]/a[1]")).click();
+		  webDriver1.findElement(By.xpath("/html/body/div/div/table/tbody/tr[1]/td[4]/a[1]")).click();
 
 		  
-		  WebElement name2 =  webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[1]/input"));
+		  WebElement name2 =  webDriver1.findElement(By.xpath("/html/body/div/div/div/form/fieldset[1]/input"));
 		  
 		  name2.sendKeys(Keys.chord(Keys.CONTROL, "a"), Name );
 		  
-		  WebElement password2 =  webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[2]/input"));
+		  WebElement password2 =  webDriver1.findElement(By.xpath("/html/body/div/div/div/form/fieldset[2]/input"));
 		  		  	  
 		  password2.sendKeys(Keys.chord(Keys.CONTROL, "a"),Name);
 		  
-		  WebElement email2 =  webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[3]/input"));
+		  WebElement email2 =  webDriver1.findElement(By.xpath("/html/body/div/div/div/form/fieldset[3]/input"));
 		  
 		  email2.sendKeys(Keys.chord(Keys.CONTROL, "a"), Name +"@gmail.com");
 		  
-		  webDriver.findElement(By.className("btnbtn-success")).click();
+		  webDriver1.findElement(By.className("btnbtn-success")).click();
 		  
-		  Assert.assertTrue(webDriver.getTitle().contains("User Management"));
-		  System.out.println("new title: "+webDriver.getTitle()); 
+		  Assert.assertTrue(webDriver1.getTitle().contains("User Management"));
+		  System.out.println("new title: "+webDriver1.getTitle()); 
 		  
 		
 	  }
 	   
 	  @Test
 	  public void Delete() {
-		  webDriver.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
+		  webDriver1.navigate().to("http://localhost:8090/DevOpsProject/UserServlet/dashboard");
 		  
-		  Assert.assertEquals(webDriver.getTitle(), "User Management");
+		  Assert.assertEquals(webDriver1.getTitle(), "User Management");
 		  
-		  webDriver.findElement(By.xpath("/html/body/div")).click();
+		  webDriver1.findElement(By.xpath("/html/body/div")).click();
 		  
 	  
 	  }
@@ -155,13 +155,13 @@ public class NewTest {
 	  System.setProperty("webdriver.chrome.driver", chromeDriverDir);
 
 	  //initialize FirefoxDriver at the start of test
-	  webDriver = new ChromeDriver();  
+	  webDriver1 = new ChromeDriver();  
   }
 
   @AfterTest
   public void afterTest() {
 	  //Quit the ChromeDriver and close all associated window at the end of test
-	  webDriver.quit();			
+	  webDriver1.quit();			
   }
 
 }
