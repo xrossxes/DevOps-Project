@@ -9,20 +9,50 @@
 	<name>MyDevOpsProject</name>
 	<description>		</description>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+
+		<junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
+		<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
+		<junit-jupiter.version>5.7.0</junit-jupiter.version>
+
+		<selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
+		<selenium.artifactId>selenium-java</selenium.artifactId>
+		<selenium.version>3.141.59</selenium.version>
+
+		<testng.groupId>org.testng</testng.groupId>
+		<testng.artifactId>testng</testng.artifactId>
+		<testng.version>6.9.10</testng.version>
+	</properties>
 	<dependencies>
 
-	<dependency>
- 		<groupId>jstl</groupId>
- 		<artifactId>jstl</artifactId>
- 		<version>1.2</version>
-	</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
 
-	<dependency>
- 		<groupId>mysql</groupId>
- 		<artifactId>mysql-connector-java</artifactId>
- 		<version>8.0.25</version>
-	</dependency>
-	
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.25</version>
+		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -47,6 +77,29 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>${selenium.groupId}</groupId>
+			<artifactId>${selenium.artifactId}</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>${testng.groupId}</groupId>
+			<artifactId>${testng.artifactId}</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>${junit-jupiter.groupId}</groupId>
+			<artifactId>${junit-jupiter.artifactId}</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
@@ -55,12 +108,22 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<release>15</release>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.3</version>
+			</plugin>
+			<plugin>
+				<artifactId>Maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -1,15 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Management</title>
 </head>
 <body>
 	<div class="row">
@@ -19,7 +16,7 @@
 			<div class="container text-left">
 				<!-- Add new user button redirects to the register.jsp page -->
 				<a href="<%=request.getContextPath()%>/register.jsp"
-					class="btn btnsuccess">Add New User</a>
+					class="btnbtnsuccess">Add New User</a>
 			</div>
 			<br>
 			<!-- Create a table to list out all current users information -->

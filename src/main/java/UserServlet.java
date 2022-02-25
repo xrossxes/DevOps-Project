@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class UserServlet 
  */
 @WebServlet("/UserServlet")
 public class UserServlet extends HttpServlet {

@@ -1,17 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Registration</title>
 </head>
 <body>
 <form action="RegisterServlet" method="post">
 	Name: <input type="text" name="userName">
 	Password: <input type="password" name="password">
 	Email: <input type="text" name="email">
-	<input type="submit" value="Call Servlet"/> 
+	<input type="submit" class="register" value="Register"/>  
 	</form>
 </body>
 </html>
