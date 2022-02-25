@@ -113,4 +113,4 @@ public class NicTest {
 		webDriver.close();
 	}
 
-}
+} 
