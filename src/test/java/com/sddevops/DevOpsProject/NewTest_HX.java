@@ -53,7 +53,7 @@ public class NewTest_HX {
 
 		password.sendKeys("eclipseTdest3");
 
-		webDriver.findElement(By.className("addprofilebtn")).click();		
+		webDriver.findElement(By.className("addprofilebtn")).click();
 		webDriver.findElement(By.className("nextpagebtn")).click();
 
 		Assert.assertTrue(webDriver.getTitle().contains("Profile Management"));
