@@ -47,7 +47,7 @@ public class NewTest {
 	  Assert.assertTrue(webDriver.getTitle().contains("User Registration"));
 	  System.out.println("new title: "+webDriver.getTitle());
 	  
-	  
+	   
   }
   @Test
   // Create a registration function to test it out
