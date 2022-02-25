@@ -67,7 +67,7 @@ public class RegisterServlet extends HttpServlet {
 		   if (i > 0){
 		  PrintWriter writer = response.getWriter();
 		  writer.println("<h1>" + "You have successfully registered an account!" +
-		  "</h1>" + "< a href='http://localhost:8090/DevOpsProject/UserServlet/dashboard' class='SuccessRegister'>" + "Next!" + "</a>");
+		  "</h1>" + "<a href='http://localhost:8090/DevOpsProject/UserServlet/dashboard' class='SuccessRegister'>" + "Next!" + "</a>");
 		  writer.close();
 		  }
 		  }
