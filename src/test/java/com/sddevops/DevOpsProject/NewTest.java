@@ -29,7 +29,7 @@ public class NewTest {
       String randomString = sb.toString();
       return randomString;
   }
-  
+   
   @Test
   public void checkTitle() {
 	  //Load website as a new page
