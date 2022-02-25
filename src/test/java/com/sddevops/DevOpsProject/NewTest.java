@@ -15,7 +15,7 @@ import org.testng.annotations.AfterTest;
 public class NewTest { 
   //declare Selenium WebDriver
   private WebDriver webDriver1;		
-  private String Name;
+  private String Name; 
    
   public String generateRandomName(int length) {
       char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
