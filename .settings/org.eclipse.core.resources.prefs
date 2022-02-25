@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
 encoding//src/main/java/AddReviewServlet.java=UTF-8
 encoding//src/main/java/CreateMovieServlet.java=UTF-8
 encoding//src/main/java/ProfileSuccessServlet.java=UTF-8
 encoding//src/main/java/RegisterServlet.java=UTF-8
 encoding//src/main/webapp/profileManagement.jsp=UTF-8
 encoding//src/main/webapp/reviewManagement.jsp=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8
