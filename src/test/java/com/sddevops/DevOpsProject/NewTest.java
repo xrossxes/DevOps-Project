@@ -16,7 +16,7 @@ public class NewTest {
   //declare Selenium WebDriver
   private WebDriver webDriver;		
   private String Name;
-  
+   
   public String generateRandomName(int length) {
       char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
               .toCharArray();
