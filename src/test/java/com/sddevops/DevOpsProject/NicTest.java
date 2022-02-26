@@ -45,13 +45,13 @@ public class NicTest {
 
 		System.out.println("title: " + webDriver.getTitle());
 
-		WebElement name = webDriver.findElement(By.xpath("/html/body/form/input[1]"));
+		WebElement title = webDriver.findElement(By.xpath("/html/body/form/input[1]"));
 
-		name.sendKeys("funny");
+		title.sendKeys("funny movie");
 
-		WebElement password = webDriver.findElement(By.xpath("/html/body/form/input[2]"));
+		WebElement comment = webDriver.findElement(By.xpath("/html/body/form/input[2]"));
 
-		password.sendKeys("eclipseTdest3");
+		comment.sendKeys("funny story");
 
 		webDriver.findElement(By.className("submitReview")).click();
 		webDriver.findElement(By.className("SuccessReview")).click();
@@ -71,13 +71,13 @@ public class NicTest {
 
 		webDriver.findElement(By.xpath("/html/body/div/div/table/tbody/tr/td[3]/a[1]")).click();
 
-		WebElement name2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[1]/input"));
+		WebElement title2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[1]/input"));
 
-		name2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "editname233");
+		title2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "something");
 
-		WebElement password2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[2]/input"));
+		WebElement comment2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[2]/input"));
 
-		password2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "editpassw2o3rd3");
+		comment2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "askjdhajksd");
 
 		webDriver.findElement(By.className("btnbtn-success")).click();
 
