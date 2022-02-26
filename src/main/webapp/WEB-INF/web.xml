@@ -5,7 +5,7 @@
 	version="3.1">
 	<display-name>DevOps Project</display-name>
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>reviewManagement.jsp</welcome-file>
 		<welcome-file>index.htm</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>default.html</welcome-file>
@@ -20,6 +20,9 @@
 
 	<servlet-mapping>
 		<servlet-name>ReviewServlet</servlet-name>
+		
+		<url-pattern>/</url-pattern>
+		
 		<url-pattern>/ReviewServlet/dashboard</url-pattern>
 		<url-pattern>/ReviewServlet/edit</url-pattern> 
 		<url-pattern>/ReviewServlet/update</url-pattern>
