@@ -1,4 +1,4 @@
-package com.sddevops.DevOpsProject;
+package com.sddevops.DevOpsProject; 
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -73,7 +73,7 @@ public class NicTest {
 
 		WebElement name2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[1]/input"));
 
-		name2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "editname233");
+		title2.sendKeys(Keys.chord(Keys.CONTROL, "a"), "aaaaaa");
 
 		WebElement password2 = webDriver.findElement(By.xpath("/html/body/div/div/div/form/fieldset[2]/input"));
 
